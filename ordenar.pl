@@ -1,5 +1,5 @@
 ordenar(L, LS):- auxOrder(L, [],LS). %L = Lista recebida; LS = Lista ordernada
-auxOrder([], LA, LA). %LA = Lista Auxiliar que armazenara um nova lista com os valores ordenados
+auxOrder([], LA, LA). %LA = Lista Auxiliar que armazenara uma nova lista com os valores ordenados
 auxOrder([X|T], LA, LS) :- auxBolha(X, T, NL, LP), auxOrder(NL, [LP|LA], LS). %NL - Nova lista
    
 auxBolha(X, [], [], X). 
