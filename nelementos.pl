@@ -1,2 +1,2 @@
 nelementos([],0).
-nelementos([_|F],N) :- nelementos(F,NTemp), N is NTemp+1.
+nelementos([_|R],N) :- nelementos(R,NT), N is NT+1.

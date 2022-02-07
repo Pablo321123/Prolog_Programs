@@ -1,2 +1,3 @@
+maior([],[]).
 maior([E],E).
-maior([C|R],M):- maior(R,M1), (C>M1, M is C; C=<M1, M is M1).
+maior([X|R],M):- maior(R,M1), (X>M1, M is X; X=<M1, M is M1).

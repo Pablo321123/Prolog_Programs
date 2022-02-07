@@ -1,2 +1,2 @@
-inserirFim(E, [], [E]).
-inserirFim(E, [C|R], [C|R1]) :- inserirFim(E, R, R1).
+inserirfim(E, [], [E]).
+inserirfim(E, [X|R], [X|R1]) :- inserirfim(E, R, R1).
